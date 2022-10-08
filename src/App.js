@@ -1,6 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
 
+const name = prompt("Enter your name:");
+
 function App() {
   return (
     <div className="App">
@@ -11,6 +13,7 @@ function App() {
         </p>
         <div>
           <h1>Hello World</h1>
+          <p>{name}</p>
         </div>
         <a
           className="App-link"

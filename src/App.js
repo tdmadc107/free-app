@@ -13,7 +13,7 @@ function App() {
         </p>
         <div>
           <h1>Hello World</h1>
-          <p>{name}</p>
+          <p>{name ? name : "My friend"}</p>
         </div>
       </header>
     </div>

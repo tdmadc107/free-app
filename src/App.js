@@ -1,11 +1,18 @@
 import "./App.css";
-import { BrowserRouter } from 'react-router-dom'
-
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { connect } from "react-redux";
+import Nav from "./component/view/Nav"
+import Home from "./component/view/Home"
 
 function App() {
   return (
-    <BrowserRouter></BrowserRouter>
+    <BrowserRouter>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App;
+export default connect(App);

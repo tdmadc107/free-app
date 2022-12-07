@@ -9,10 +9,11 @@ export const addProduct = (products) => {
 }
 
 // Edit product
-export const editProduct = (id) => {
+export const editProduct = (id, contentProduct) => {
     return {
         type: EDIT_PRODUCT,
-        id
+        id,
+        contentProduct
     }
 }
 
